@@ -2,12 +2,13 @@ import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 
 export function Headline(props) {
+
     return (
         <> {/* <>はReact.Fragmentの省略形 */}
             <div className={styles.description}>
                 <p>
                     Get started by editing&nbsp;
-                    <code className={styles.code}>pages/{props.page}</code>
+                    {props.children}
                 </p>
                 <div>
                     <a
